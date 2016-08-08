@@ -4,6 +4,7 @@
 ![image](http://www.fogcreek.com/images/new_programmer.png)
 
 ## What is your project?
+Our project uses survey data from FreeCodeCamp (with over 15,000 participants) and D3js to visualize different aspects of people who are just starting out in the software development field.
 
 ## How do I clone down your app?
 

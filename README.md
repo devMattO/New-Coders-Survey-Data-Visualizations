@@ -1,6 +1,8 @@
 [![Stories in Ready](https://badge.waffle.io/devMattO/New-Coders-Survey-Data-Visualizations.png?label=ready&title=Ready)](https://waffle.io/devMattO/New-Coders-Survey-Data-Visualizations)
 # New-Coders-Survey-Data-Visualizations
 
+![image](http://www.fogcreek.com/images/new_programmer.png)
+
 ## What is your project?
 
 ## How do I clone down your app?

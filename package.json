@@ -1,0 +1,25 @@
+{
+  "name": "new-coders-survey-data-visualizations",
+  "version": "1.0.0",
+  "description": "[![Stories in Ready](https://badge.waffle.io/devMattO/New-Coders-Survey-Data-Visualizations.png?label=ready&title=Ready)](https://waffle.io/devMattO/New-Coders-Survey-Data-Visualizations) # New-Coders-Survey-Data-Visualizations",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "express": "^4.14.0",
+    "sass": "^0.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devMattO/New-Coders-Survey-Data-Visualizations.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devMattO/New-Coders-Survey-Data-Visualizations/issues"
+  },
+  "homepage": "https://github.com/devMattO/New-Coders-Survey-Data-Visualizations#readme"
+}

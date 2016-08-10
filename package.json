@@ -6,7 +6,11 @@
   "dependencies": {
     "angular": "^1.5.8",
     "express": "^4.14.0",
-    "sass": "^0.5.0"
+    "pg": "^6.0.3",
+    "pg-hstore": "^2.3.2",
+    "sass": "^0.5.0",
+    "sequelize": "^3.23.6",
+    "sequelize-cli": "^2.4.0"
   },
   "devDependencies": {},
   "scripts": {

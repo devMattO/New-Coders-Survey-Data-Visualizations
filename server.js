@@ -1,33 +1,36 @@
 const fs = require('fs');
 const express = require('express');
 const app = express();
-const Sequelize = require('sequelize');
+// const Sequelize = require('sequelize');
+const db = require('./models');
+const PORT = 4000 || process.env.PORT;
 
-var sequelize = new Sequelize('programmerdata', 'htmlint', 'f', {
-  host: 'localhost',
-  dialect: 'postgres',
-});
+var surveydata = db.surveydata;
 
-var pgrData = sequelize.define('testdata', {
-  CityPopulation: {
-    type: Sequelize.STRING,
-    allowNull: true,
-    primaryKey: true
-  }
-})
-/*pgrData.sync({force: true}).then(function () {
-  return pgrData.create({});
-});*/
 
-app.use(express.static('public'))
+
+/*  MIDDLEWARE  */
+
+// for dev: logs all requests
+app.use(function(req, res, next) {
+  console.log('method: ',req.method, ' url: ',req.url);
+  next();
+ });
+
+app.use(express.static('public'));
 
 app.get('/api/stuff', (req, res) => {
-  sequelize.query('SELECT * FROM "testdata"', {type: sequelize.QueryTypes.SELECT})
-    .then(function(err, data){
-      res.json(data)
-    })
+  surveydata.findOne({
+    where: { NetworkID : '4074a06017' }
+  })
+    .then(function(data, err){
+      // in terminal window
+      console.log('data: ', data.dataValues);
+      if(err) console.log('error: ', err);
+      res.json(data.dataValues);
+    });
 });
 
-app.listen(4000, () => {
-  console.log('server restarted...')
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
 });

@@ -1,0 +1,76 @@
+/* @import 'partials/reset'; */
+* {
+  font-family: 'Rajdhani', sans-serif;
+  text-align: center;
+  letter-spacing: 1px; }
+
+body {
+  color: #000000;
+  background-color: #f5f5f5;
+  text-align: center;
+  /*   display:flex;
+  flex-flow: row wrap; */
+  align-items: center;
+  padding: 2em; }
+  @media only screen and (min-width: 600px) {
+    body .leftArrow {
+      position: absolute;
+      top: 45%;
+      left: 3%; }
+    body .leftArrow:hover {
+      opacity: 0.7; }
+    body .rightArrow {
+      position: absolute;
+      top: 45%;
+      right: 3%; }
+    body .rightArrow:hover {
+      opacity: 0.7; } }
+  body a:link {
+    color: #000000;
+    text-decoration: none; }
+  body a:visited {
+    color: #000000; }
+  body a:hover {
+    color: #444444; }
+  body a:active {
+    color: #f5f5f5; }
+
+#headerText {
+  text-align: center;
+  font-size: 3em;
+  margin: 0px; }
+
+.category {
+  display: block; }
+  .category .categoryTitle {
+    font-weight: 700;
+    font-size: 1.5em; }
+  .category .individualCharts {
+    display: inline-block;
+    margin: 0px; }
+    .category .individualCharts h4 {
+      font-weight: 500;
+      margin: 5px; }
+    .category .individualCharts img {
+      width: 150px;
+      height: 150px;
+      margin: 0px 15px 20px 15px; }
+    .category .individualCharts img:hover {
+      opacity: 0.7;
+      transition: all 0.1s ease-out; }
+
+.leftArrow {
+  position: absolute;
+  top: 45%;
+  left: 1%; }
+
+.leftArrow:hover {
+  opacity: 0.7; }
+
+.rightArrow {
+  position: absolute;
+  top: 45%;
+  right: 1%; }
+
+.rightArrow:hover {
+  opacity: 0.7; }

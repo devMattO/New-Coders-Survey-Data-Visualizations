@@ -13,6 +13,7 @@
 
 
 </head>
+
 <!-- <div class="leftArrow"><img src="left-arrow-key.png"></div> -->
 <div class="rightArrow"><img src="keyboard-right-arrow-button.png"></div>
 
@@ -21,43 +22,13 @@
   <div ui-view></div>
   <!-- <a ui-sref="state2">State 2</a> -->
 
-
-
-<!--   <div class="container" ng-app="app" ng-controller="Controller">
-    <h3>Angular Modal Service</h3>
-     <a class="btn btn-default" href ng-click="show()">Show a Modal</a>
-     <p>{{message}}</p>
-
-     The actual modal template, just a bit o bootstrap
-     <script type="text/ng-template" id="modal.html">
-         <div class="modal fade">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Yes or No?</h4>
-              </div>
-              <div class="modal-body">
-                <p>It's your call...</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">No</button>
-                <button type="button" ng-click="close('Yes')" class="btn btn-primary" data-dismiss="modal">Yes</button>
-              </div>
-            </div>
-          </div>
-        </div>
-     </script>
-</div> -->
-
-
-
-
-
   <div class="category"><span class="categoryTitle">BASICS</span></h3><br>
     <div class="individualCharts"><a ui-sref="state1.list"><h4>Gender</h4><img src="male-female-hi.png"></a></div>
     <div class="individualCharts"><a ui-sref="state1.list"><h4>Age</h4><img src="graph2.jpg"></a></div>
     <div class="individualCharts"><a ui-sref="state1.list"><h4>Country Citizen and Country Living</h4><img src="bar-chart-horizontal.png"></a></div>
+<body ng-app="dataApp">
+  <div ng-controller="dataController">
+    <button ng-click="clickToLoad()">One record from survey</button>
   </div>
 
   <div class="category"><span class="categoryTitle">EDUCATION</span></h3><br>
@@ -74,7 +45,6 @@
     <div class="individualCharts"><a ui-sref="state1.list"><h4>Major</h4><img src="PieChart.png"></a></div>
     <div class="individualCharts"><a ui-sref="state1.list"><h4>Has Student Debt</h4><img src="PieChart.png"></a></div>
   </div>
-
 
   <script src="/d3-3.5.17/d3.min.js"></script>
   <script src="/c3-0.4.11/c3.min.js"></script>

@@ -33,7 +33,7 @@ module.exports = {
         allowNull : true
       },
       BootcampName : {
-        type : Sequelize.STRING(63),
+        type : Sequelize.STRING(127),
         allowNull : true
       },
       BootcampPostSalary : {
@@ -93,7 +93,7 @@ module.exports = {
         allowNull : true
       },
       CodeEventOther : {
-        type : Sequelize.STRING(63),
+        type : Sequelize.STRING(127),
         allowNull : true
       },
       CodeEventRailsBridge : {
@@ -133,7 +133,7 @@ module.exports = {
         allowNull : true
       },
       EmploymentFieldOther : {
-        type : Sequelize.STRING(63),
+        type : Sequelize.STRING(127),
         allowNull : true
       },
       EmploymentStatus : {
@@ -141,7 +141,7 @@ module.exports = {
         allowNull : true
       },
       EmploymentStatusOther : {
-        type : Sequelize.STRING(63),
+        type : Sequelize.STRING(127),
         allowNull : true
       },
       ExpectedEarning : {
@@ -233,11 +233,11 @@ module.exports = {
         allowNull : true
       },
       JobRoleInterest : {
-        type : Sequelize.STRING(63),
+        type : Sequelize.STRING(127),
         allowNull : true
       },
       JobRoleInterestOther : {
-        type : Sequelize.STRING(63),
+        type : Sequelize.STRING(127),
         allowNull : true
       },
       JobWherePref : {
@@ -317,7 +317,7 @@ module.exports = {
         allowNull : true
       },
       PodcastOther : {
-        type : Sequelize.STRING(63),
+        type : Sequelize.STRING(511),
         allowNull : true
       },
       PodcastProgrammingThrowDown : {
@@ -405,7 +405,7 @@ module.exports = {
         allowNull : true
       },
       ResourceOther : {
-        type : Sequelize.STRING(63),
+        type : Sequelize.STRING(511),
         allowNull : true
       },
       ResourcePluralSight : {

@@ -1,14 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
+<html ng-app="counterApp">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-</head>
-<body ng-app="dataApp">
-  <div ng-controller="dataController">
-    <button ng-click="clickToLoad()">ClickToLoad</button>
-  </div>
+  <link href="/css/styles.css" rel="stylesheet" type="text/css">
+  <link href="/c3-0.4.11/c3.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+
+  <script src="https://code.angularjs.org/1.4.9/angular.min.js"></script>
+  <script src="https://rawgit.com/dwmkerr/angular-modal-service/master/dst/angular-modal-service.js"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-  <script src="/app.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+  <script src="/js/app.js"></script>
+
+
+</head>
+<!-- <div class="leftArrow"><img src="left-arrow-key.png"></div> -->
+<div class="rightArrow"><img src="keyboard-right-arrow-button.png"></div>
+
+<body ng-controller="counterController" ng-app="app">
+  <h1 id="headerText">freeCodeCamp Twenty-Sixteen Coding Bootcamp Survey</h1>
+  <div ui-view></div>
+  <!-- <a ui-sref="state2">State 2</a> -->
+
+
+
+<!--   <div class="container" ng-app="app" ng-controller="Controller">
+    <h3>Angular Modal Service</h3>
+     <a class="btn btn-default" href ng-click="show()">Show a Modal</a>
+     <p>{{message}}</p>
+
+     The actual modal template, just a bit o bootstrap
+     <script type="text/ng-template" id="modal.html">
+         <div class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Yes or No?</h4>
+              </div>
+              <div class="modal-body">
+                <p>It's your call...</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" ng-click="close('No')" class="btn btn-default" data-dismiss="modal">No</button>
+                <button type="button" ng-click="close('Yes')" class="btn btn-primary" data-dismiss="modal">Yes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+     </script>
+</div> -->
+
+
+
+
+
+  <div class="category"><span class="categoryTitle">BASICS</span></h3><br>
+    <div class="individualCharts"><a ui-sref="state1.list"><h4>Gender</h4><img src="male-female-hi.png"></a></div>
+    <div class="individualCharts"><a ui-sref="state1.list"><h4>Age</h4><img src="graph2.jpg"></a></div>
+    <div class="individualCharts"><a ui-sref="state1.list"><h4>Country Citizen and Country Living</h4><img src="bar-chart-horizontal.png"></a></div>
+  </div>
+
+  <div class="category"><span class="categoryTitle">EDUCATION</span></h3><br>
+    <div class="individualCharts"><a ui-sref="state1.list"><h4>Degree</h4><img src="PieChart.png"></a></div>
+    <div class="individualCharts"><a ui-sref="state1.list"><h4>Major</h4><img src="PieChart.png"></a></div>
+    <div class="individualCharts"><a ui-sref="state1.list"><h4>Has Student Debt</h4><img src="PieChart.png"></a></div>
+  </div>
+
+  <div class="category"><span class="categoryTitle">EMPLOYMENT</span></h3><br>
+    <div class="individualCharts"><a ui-sref="state1.list"><h4>Degree</h4><img src="PieChart.png"></a></div>
+    <div class="individualCharts"><a ui-sref="state1.list"><h4>Major</h4><img src="PieChart.png"></a></div>
+    <div class="individualCharts"><a ui-sref="state1.list"><h4>Has Student Debt</h4><img src="PieChart.png"></a></div>
+    <div class="individualCharts"><a ui-sref="state1.list"><h4>Degree</h4><img src="PieChart.png"></a></div>
+    <div class="individualCharts"><a ui-sref="state1.list"><h4>Major</h4><img src="PieChart.png"></a></div>
+    <div class="individualCharts"><a ui-sref="state1.list"><h4>Has Student Debt</h4><img src="PieChart.png"></a></div>
+  </div>
+
+
+  <script src="/d3-3.5.17/d3.min.js"></script>
+  <script src="/c3-0.4.11/c3.min.js"></script>
+
+
+  <script type="text/javascript" src="chart_pie.js"></script>
+  <script type="text/javascript" src="modal.js"></script>
 </body>
 </html>

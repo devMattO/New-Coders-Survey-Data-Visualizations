@@ -1,29 +1,43 @@
 {
-  "name": "new-coders-survey-data-visualizations",
+  "name": "ang",
   "version": "1.0.0",
-  "description": "[![Stories in Ready](https://badge.waffle.io/devMattO/New-Coders-Survey-Data-Visualizations.png?label=ready&title=Ready)](https://waffle.io/devMattO/New-Coders-Survey-Data-Visualizations) # New-Coders-Survey-Data-Visualizations",
-  "main": "index.js",
-  "dependencies": {
-    "angular": "^1.5.8",
-    "express": "^4.14.0",
-    "pg": "^6.0.3",
-    "pg-hstore": "^2.3.2",
-    "sass": "^0.5.0",
-    "sequelize": "^3.23.6",
-    "sequelize-cli": "^2.4.0"
-  },
-  "devDependencies": {},
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/devMattO/New-Coders-Survey-Data-Visualizations.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/devMattO/New-Coders-Survey-Data-Visualizations/issues"
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "autoprefixer": "^6.4.0",
+    "browser-sync": "^2.14.0",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "html": "0.0.10",
+    "html-webpack-plugin": "^2.22.0",
+    "patch": "0.0.1",
+    "path": "^0.12.7",
+    "sass": "^0.5.0",
+    "sass-loader": "^4.0.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.12.2"
   },
-  "homepage": "https://github.com/devMattO/New-Coders-Survey-Data-Visualizations#readme"
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drewpchannel/simple-angular.git"
+  },
+  "bugs": {
+    "url": "https://github.com/drewpchannel/simple-angular/issues"
+  },
+  "homepage": "https://github.com/drewpchannel/simple-angular#readme",
+  "description": ""
 }

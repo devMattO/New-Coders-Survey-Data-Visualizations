@@ -1,0 +1,116 @@
+// Resets, Clearfix, etc
+//@import 'partials/clearfix';
+/* @import 'partials/reset'; */
+
+// Variables
+$bgColor: #f5f5f5;
+
+// Media Query Ranges
+$medium: "only screen and (min-width: 600px)";
+$large: "only screen and (min-width: 900px)";
+$x-large: "only screen and (min-width: 1350px)";
+
+*{
+  font-family: 'Rajdhani', sans-serif;
+  text-align:center;
+  letter-spacing: 1px;
+}
+
+body {
+  color: #000000;
+  background-color: $bgColor;
+  //background-image: url("/egbggrey.jpg");
+  text-align: center;
+/*   display:flex;
+  flex-flow: row wrap; */
+  align-items: center;
+  padding: 2em;
+
+  @media #{$medium}{
+    .leftArrow {
+      position: absolute;
+      top: 45%;
+      left: 3%;
+    }
+
+    .leftArrow:hover {
+      opacity:0.7;
+    }
+
+    .rightArrow {
+      position: absolute;
+      top: 45%;
+      right: 3%;
+    }
+
+    .rightArrow:hover {
+      opacity:0.7;
+    }
+  }
+
+  a:link {
+    color: #000000;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #000000;
+  }
+  a:hover {
+    color: #444444;
+  }
+  a:active {
+    color: $bgColor;
+  }
+}
+
+#headerText {
+  text-align: center;
+  font-size: 3em;
+  margin: 0px;
+}
+
+.category {
+  display: block;
+  .categoryTitle {
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+  .individualCharts {
+    //background-color:#c0c0c0;
+    display: inline-block;
+    margin: 0px;
+    h4 {
+      font-weight: 500;
+      margin: 5px;
+    }
+    img {
+      width: 150px;
+      height: 150px;
+      margin: 0px 15px 20px 15px;
+    }
+    img:hover {
+      opacity:0.7;
+      transition: all 0.1s ease-out;
+    }
+  }
+}
+
+.leftArrow {
+  position: absolute;
+  top: 45%;
+  left: 1%;
+}
+
+.leftArrow:hover {
+  opacity:0.7;
+}
+
+.rightArrow {
+  position: absolute;
+  top: 45%;
+  right: 1%;
+}
+
+.rightArrow:hover {
+  opacity:0.7;
+}
